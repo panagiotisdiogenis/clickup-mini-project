@@ -1,0 +1,68 @@
+@use '../abstracts' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+font-family: $font-primary;
+font-weight: $normal;
+}
+
+.nav__list > li:first-child a {
+font-weight: $semibold;
+color: $dark-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+font-family: $font-heading;
+}
+
+h1 {
+@include fluid-font(5vw, 60px, 80px, 35px);
+line-height: 5.5rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+@include fluid-font(5vw, 25px, 40px, 35px);
+line-height: 3.25rem;
+}
+
+p {
+@include fluid-font(2.5vw, 10px, 18px, 18px);
+line-height: 1.8rem;
+margin: 2.5rem auto;
+word-spacing: 0.1rem;
+}
+
+h6 {
+font-size: 1rem;
+}
+
+button {
+font-family: $font-primary;
+@include fluid-font(5vw, 8px, 16px, 14px);
+font-weight: $semibold;
+}
+
+.testimonials__container h4 {
+color: $white;
+}
+
+.footer__address {
+color: $dark-blue;
+line-height: 1.8rem;
+}
+
+.footer__contact {
+line-height: 1.8rem;
+} 

@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+
+.testimonials__card {
+  display: flex;
+  min-width: 40vw;
+  max-width: 645px;
+  max-height: 20.625rem;
+  padding: 1.875rem 0 1.875rem 0;
+  background-color: $white;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 0 rgba(131, 88, 211, 1);
+}
+
+.testimonials__card-pic {
+  align-self: flex-start;
+  max-width: 5.625rem;
+  margin-top: 1.5rem;
+  margin-left: 4.375rem;
+}
+
+.testimonials__card-name {
+  color: $dark-blue;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  font-weight: $semibold;
+}
+
+.testimonials__card-title {
+  color: $purple;
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+}
+
+.testimonials__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 24.0625rem;
+  margin-left: 1.875rem;
+  margin-top: 2.75rem;
+}
+
+.testimonials__text p {
+  line-height: 2.025rem;
+  margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 1374px) {
+  .testimonials__text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .testimonials__card-pic {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonial__card {
+    width: 80vw;
+  }
+}

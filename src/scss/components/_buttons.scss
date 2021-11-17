@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+button {
+  height: 3.75rem;
+  border: none;
+  border-radius: 5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.125rem;
+  background-color: $white;
+  color: $dark-blue;
+  box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+}
+
+.nav__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.125rem;
+  background-color: $white;
+  color: $dark-blue;
+  box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+}
+
+@media screen and (max-width: 884px) {
+  .nav__btn {
+    display: none;
+  }
+}
+
+.demo__container {
+  display: flex;
+  align-items: center;
+}
+
+.demo__arrow {
+  margin-top: 0.2rem;
+  padding-left: 1.2rem;
+}
+
+.learn-btn {
+  width: 10.625rem;
+  background-color: $purple;
+  color: $white;
+}

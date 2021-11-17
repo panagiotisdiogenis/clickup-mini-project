@@ -1,0 +1,122 @@
+@use '../abstracts/' as *;
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 69.875rem;
+  max-width: 70vw;
+  min-height: 53vh;
+  overflow: hidden;
+  margin-bottom: 9.375rem;
+  background-color: $purple;
+  border-radius: 3.125rem;
+}
+
+.testimonials__heading,
+.testimonials__card-container,
+.testimonials__nav {
+  margin-left: 5.8125rem;
+}
+
+.testimonials__heading {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.testimonials__card-container {
+  display: flex;
+  overflow: visible;
+}
+
+#card1 {
+  overflow: hidden;
+}
+
+.card-next {
+  margin-left: 1.25rem;
+  box-shadow: 0 20px 0 rgba(131, 88, 211, 0.3) !important;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(92, 2, 218));
+}
+
+.card-next img {
+  margin-left: 2.5rem;
+}
+
+.card-next .testimonials__text p {
+  color: rgba(75, 93, 104, 0.4);
+}
+
+.testimonials__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials__nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__nav-dot--active {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: $pink;
+  border-radius: 100%;
+}
+
+.testimonials__nav-dot {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  background-color: $white;
+  border-radius: 100%;
+  margin-left: 0.625rem;
+}
+
+.testimonials__nav-arrows {
+  margin-right: 5rem;
+}
+
+.testimonials__nav-arrow--left {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 884px) {
+  .testimonials__heading,
+  .testimonials__card-container {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials__info {
+    max-width: 90vw;
+  }
+
+  .testimonials__card {
+    width: 80vw;
+    padding: 0 !important;
+  }
+
+  .card-next {
+    display: none !important;
+  }
+
+  .testimonials__nav {
+    margin-top: 2.3rem;
+    margin-left: 2rem;
+    width: 80vw;
+  }
+
+  .testimonials__nav-arrows {
+    margin-right: 2rem;
+  }
+}

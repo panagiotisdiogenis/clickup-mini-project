@@ -1,0 +1,55 @@
+@use '../abstracts/' as *;
+
+.trial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+  margin-top: 3.125rem;
+}
+
+.trial__info p {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.trial__ctas {
+  display: flex;
+}
+
+.trial__learn-btn {
+  background-color: $pink !important;
+  margin-right: 1.875rem;
+}
+
+@media screen and (max-width: 884px) {
+  .trial {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .trial__info {
+    margin-bottom: 2rem;
+  }
+
+  .trial__ctas {
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .trial__info {
+    margin: 0;
+  }
+  .trial__ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trial__learn-btn {
+    margin: 2rem 0;
+  }
+}
