@@ -1,0 +1,22 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "ClickUp Mini Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/panagiotisdiogenis/mini-project.git"
+  },
+  "author": "Diogenis Panagiotis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panagiotisdiogenis/mini-project/issues"
+  },
+  "homepage": "https://github.com/panagiotisdiogenis/mini-project#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
